@@ -1,6 +1,6 @@
 #container {
     display: flex;
-    background-color: rgb(219, 223, 226);
+    background-color: white;
     top: 0;
     left: 0;
     font-family: Segoe UI;
@@ -9,4 +9,13 @@
     overflow: auto; 
     position: fixed; 
     flex-direction: column;
+}
+
+#header-logo {
+    align-self: flex-start;
+}
+
+#main-img {
+    height: 150px;
+    width: 300px;
 }
