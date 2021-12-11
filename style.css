@@ -1,0 +1,12 @@
+#container {
+    display: flex;
+    background-color: rgb(219, 223, 226);
+    top: 0;
+    left: 0;
+    font-family: Segoe UI;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    position: fixed; 
+    flex-direction: column;
+}
