@@ -1,3 +1,4 @@
+
 <!doctype html>
 <head>
   <title>Product Landing Page</title>
@@ -5,21 +6,50 @@
 </head>
 
 <!--
-    User Story #3: Within the #header element 
-    I can see a nav element with a corresponding id="nav-bar".
+   User Story #4: I can see at least three clickable elements
+   inside the nav element, each with the class nav-link.
 -->
 
 <body>
- <div id="container">
-      <header id="header-logo">
-        <img id="main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSdoFfUPKjSL2jC4XZUrzy7fAKbnm6mWZq2XDlxG9TOuyfIWFu1nIpRjyDJQNttyk2bU&usqp=CAU" alt="MansonGuitarWorks">
-      </header>
-    <div id="nav-bar">
-      
+  <header id="header-logo"> 
+    <div id="header-section">
+       
+         <img id="main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSdoFfUPKjSL2jC4XZUrzy7fAKbnm6mWZq2XDlxG9TOuyfIWFu1nIpRjyDJQNttyk2bU&usqp=CAU" alt="MansonGuitarWorks"/> 
+    <div id="nav-bar">  
+         <nav>                        
+           <ul class="list-style">
+                <li>
+                    <a class="nav-link" href="#feature">Feature</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#demo">Demo</a>
+                </li>
+                <li> 
+                    <a class="nav-link" href="#price">Pricing</a>
+                </li>   
+           </ul>
+         </nav>
+    </div>        
     </div>
-
- </div>
-   
+  </header>
+  </div>   
 </body>
 </html>
-  
+ 
+
+<!-- 
+
+  <nav>
+					<ul>
+						<il></il>
+						<il></il>
+						<il></il>
+					</ul>
+	</nav>
+
+  I should create a link to a specific section of my page
+  so i've to nest <a href> in to my nav element ( don't forget the anchor #)
+  I wanto to include the logo in my navbar
+-->
+
+
