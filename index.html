@@ -3,11 +3,11 @@
 <head>
   <title>Product Landing Page</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://www.youtube.com/embed/iJdHUk8rgNA">
 </head>
 
 <!--
-   User Story #5: When I click a .nav-link button in the nav element, 
-   I am taken to the corresponding section of the landing page.
+   User Story #6: I can watch an embedded product video with id="video"
 -->
 
 <body>
@@ -47,7 +47,10 @@
            <section id="features">
            </section>
 
-           <section id="demo">
+           <section id="demo">            
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/iJdHUk8rgNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+             
            </section>
 
            <section id="price">
@@ -60,9 +63,13 @@
 </html>
  
 <!--
-    For this userStory we need to introduce <section>
-    for nesting elments which are similar for theme
-    and which they share same heading.
-    I've to create the structure for clickable elements of my page
+    To import video i need to add <video> tag to my page:
+      <embed src="youtube.url" allowfullscreen="true" width="x" height="x">
+        oppure
+      <iframe  width="425" height="344" src="youtube.url" frameborder="0" allowfullscreen></iframe>
+    
+    Youtube italia don't allow to import video. Only way to do that is by clicking on
+    share button under youtube playr, search for  "incorpora video", copy and then paste on
+    on index.hmtl
 -->
 

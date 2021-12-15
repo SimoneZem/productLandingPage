@@ -29,7 +29,6 @@
 #nav-bar {
     float: right;
     margin-right: 60px;
-    align-content: space-between;
 }
 
 #main-img {
@@ -49,4 +48,9 @@
 .list-style {
     display: flex;
     list-style: none;
+}
+
+#demo {
+    display: flex;
+    justify-content: center;    
 }
