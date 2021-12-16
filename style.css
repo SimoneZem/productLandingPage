@@ -10,31 +10,37 @@
     font-size: 20px;
     font-family: sans-serif;
     border: 1px solid black;
-    justify-content: center;
-    align-content: center;
+    
   }
 
-#header-section {
-    background-color: crimson;
-    display: inline;
-    justify-content: center;
+  #subscribe-area {
+    border: 1px solid yellow;
+    align-self: center;
+}
+ 
+#header-logo {
+    display: inline-block;
+    border: 1px solid blue;
     height: 110px;
     width: 100%;
-}
-
-#header-logo {
     margin-left: 10px;
 }
 
 #nav-bar {
+    border: 1px solid red;
     float: right;
     margin-right: 60px;
 }
 
-#main-img {
-    height: 110px;
-    width: 220px;
+#customer-section {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
 }
+
+
 
 .nav-link {
     float: left;
@@ -42,7 +48,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
 }
 
 .list-style {
@@ -54,3 +59,24 @@
     display: flex;
     justify-content: center;    
 }
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+   
+  }
+   
+  #form {
+      align-self: center;
+      width: 200px;
+  }
+
+  #submit-button {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
+  }

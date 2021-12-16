@@ -7,13 +7,12 @@
 </head>
 
 <!--
-   User Story #6: I can watch an embedded product video with id="video"
+   User Story #7: My landing page has a form element with a corresponding id="form".
 -->
 
 <body>
   <header id="header-logo"> 
-    <div id="header-section">
-         <img id="main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSdoFfUPKjSL2jC4XZUrzy7fAKbnm6mWZq2XDlxG9TOuyfIWFu1nIpRjyDJQNttyk2bU&usqp=CAU" alt="MansonGuitarWorks"/> 
+         <img id="main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSdoFfUPKjSL2jC4XZUrzy7fAKbnm6mWZq2XDlxG9TOuyfIWFu1nIpRjyDJQNttyk2bU&usqp=CAU" alt="MansonGuitarWorks" height="110px" width="220px"/> 
       <div id="nav-bar">  
          <nav>                        
            <ul class="list-style">
@@ -29,14 +28,23 @@
            </ul>
          </nav>
       </div>        
-    </div>
 
     <div id="customer-section">
         <section id="subscribe-area">
           <h2 class="title">
             Handcrafted masterpieces
           </h2>
-          <form>
+          <form id="form"> 
+          <ul class="list-style">
+          <li class="services-label">
+            <div class="input-container">
+              <input type="email" placeholder="someone@example.com" name="email" id="email" class="text" required>  
+           </div>
+           <div id="submit-button">
+            <input type="submit" name="submit-button" id="submit" class="submit-button"> 
+           </div>
+          </li>
+          </ul>
           </form>
         </section>
 
@@ -62,14 +70,6 @@
 </body>
 </html>
  
-<!--
-    To import video i need to add <video> tag to my page:
-      <embed src="youtube.url" allowfullscreen="true" width="x" height="x">
-        oppure
-      <iframe  width="425" height="344" src="youtube.url" frameborder="0" allowfullscreen></iframe>
+
     
-    Youtube italia don't allow to import video. Only way to do that is by clicking on
-    share button under youtube playr, search for  "incorpora video", copy and then paste on
-    on index.hmtl
--->
 
