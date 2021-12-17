@@ -7,15 +7,15 @@
 </head>
 
 <!--
-   User Story #12: When I click the #submit element, 
-   the email is submitted to a static page (use this mock URL: 
+  User Story #13: The navbar should always be at the top of the viewport.
 -->
 
 <body>
-<div id="main-container">
-  <header id="header-logo"> 
+<div id="header-container">
+     <header id="header-logo"> 
          <img id="main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSdoFfUPKjSL2jC4XZUrzy7fAKbnm6mWZq2XDlxG9TOuyfIWFu1nIpRjyDJQNttyk2bU&usqp=CAU" alt="MansonGuitarWorks" height="110px" width="220px"/> 
-      <div id="nav-bar">  
+     </header>   
+       <div id="nav-bar">
          <nav>                        
            <ul class="list-style">
                 <li>
@@ -29,9 +29,10 @@
                 </li>   
            </ul>
          </nav>
-    </header> 
-      </div>        
+      </div>
+</div>
 
+<div id="page-wrapper">
     <div id="customer-section">
         <section id="subscribe-area">
           <h2 class="title">
@@ -50,9 +51,6 @@
           </ul>
           </form>
         </section>
-
-      <div class="clickable-elements">
-      </div>
       
        <div class="navbar-elements">
            <section id="features">
@@ -61,7 +59,6 @@
            <section id="demo">            
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/iJdHUk8rgNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
-             
            </section>
 
            <section id="price">
@@ -74,9 +71,7 @@
 </html>
  
 <!--
-  I've already done userStory11 in userStory8 so i'll skit to userStory12.
-  For doing this task i've to add action attribute to my form.
-  action="url.url" :
-  <form id="#form" action"http//xyz.com">.
-  I've also set a name for my submit button : value="name".
+  My navbar is in the top of the viewport
+  but isn't responsive.
+  
 -->

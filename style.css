@@ -3,8 +3,20 @@ input:invalid {
     outline: none;
   }
 
-#main-container {
-    background-color: whitesmoke;
+#header-container {
+    display: flex;
+    background-color: grey;
+    border: 1px solid goldenrod;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 115px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#page-wrapper{
     display: flex;
     width: 100%;
     overflow: auto;
@@ -15,30 +27,31 @@ input:invalid {
     border: 1px solid black;
     justify-content: center;
     align-content: center;
-    
+    flex-direction: column;    
   }
 
   #subscribe-area {
-    border: 1px solid yellow;
-   align-self: center;
-  
+    border: 1px solid green;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
  
 #header-logo {
     border: 1px solid blue;
-    width: 100%;
-    
+    width: 500px; 
 }
 
 #nav-bar {
-    border: 1px solid red;
     float: right;
-    margin-right: 60px;
+    border: 1px solid red;
+    width: 350px;
+    height: 110px;
 }
 
 #customer-section {
     display: flex;
-    border: 1px solid black;
+    border: 1px solid cyan;
     flex-direction: column;
     margin-top: 20px;
     width: 100%;
@@ -55,6 +68,7 @@ input:invalid {
 .list-style {
     display: flex;
     list-style: none;
+    margin-left: 40px;
 }
 
 #demo {
@@ -68,6 +82,10 @@ input:invalid {
     width: 200px;
     margin-left: 6px;
    
+  }
+
+  #video {
+      margin-bottom: 30px;
   }
    
   #form {
