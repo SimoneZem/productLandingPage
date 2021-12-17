@@ -7,8 +7,8 @@
 </head>
 
 <!--
-   User Story #10: The #email input field uses HTML5 validation 
-   to confirm that the entered text is an email address.
+   User Story #12: When I click the #submit element, 
+   the email is submitted to a static page (use this mock URL: 
 -->
 
 <body>
@@ -37,14 +37,14 @@
           <h2 class="title">
             Handcrafted masterpieces
           </h2>
-          <form id="form"> 
+          <form id="form" action="https://www.freecodecamp.com/email-submit"> 
           <ul class="list-style">
           <li class="services-label">
             <div class="input-container">
               <input type="email" placeholder="someone@example.com" name="email" id="email" class="text" required>  
            </div>
            <div id="submit-button">
-            <input type="submit" name="submit-button" id="submit" class="submit-button"> 
+            <input type="submit" name="submit-button" id="submit" class="submit-button" value="Get Started" > 
            </div>
           </li>
           </ul>
@@ -74,7 +74,9 @@
 </html>
  
 <!--
-  I've already done userStory8 and 9 in userStory7.
-  At this poitn i've have to add html validation to confirm
-  that i've enterd an email address
+  I've already done userStory11 in userStory8 so i'll skit to userStory12.
+  For doing this task i've to add action attribute to my form.
+  action="url.url" :
+  <form id="#form" action"http//xyz.com">.
+  I've also set a name for my submit button : value="name".
 -->
