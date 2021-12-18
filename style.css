@@ -3,6 +3,10 @@ input:invalid {
     outline: none;
   }
 
+  
+    
+  
+
 #header-container {
     display: flex;
     background-color: grey;
@@ -42,11 +46,13 @@ input:invalid {
     width: 500px; 
 }
 
-#nav-bar {
-    float: right;
-    border: 1px solid red;
-    width: 350px;
-    height: 110px;
+@media (max-width: 650px) {
+            #nav-bar {
+                    float: right;
+                    border: 1px solid red;
+                    width: 350px;
+                    height: 110px;
+                    }
 }
 
 #customer-section {
