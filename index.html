@@ -1,89 +1,144 @@
-
 <!doctype html>
 <head>
   <title>Product Landing Page</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://www.youtube.com/embed/iJdHUk8rgNA">
 </head>
-
+ 
 <!--
   User Story #15: My product landing page should utilize CSS flexbox at least once 
 -->
-
+ 
 <body>
-<div id="header-container">
-     <header id="header-logo"> 
-         <img id="main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSdoFfUPKjSL2jC4XZUrzy7fAKbnm6mWZq2XDlxG9TOuyfIWFu1nIpRjyDJQNttyk2bU&usqp=CAU" alt="MansonGuitarWorks" height="110px" width="220px"/> 
-     </header>   
-       <div id="nav-bar">
-         <nav>                        
-           <ul class="list-style">
-                <li>
-                    <a class="nav-link" href="#feature">Feature</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#demo">Demo</a>
-                </li>
-                <li> 
-                    <a class="nav-link" href="#price">Pricing</a>
-                </li>   
-           </ul>
-         </nav>
-      </div>
-</div>
-
-<div id="page-wrapper">
-    <div id="customer-section">
-        <section id="subscribe-area">
-          <h2 class="title">
-            Handcrafted masterpieces
-          </h2>
-          <form id="form" action="https://www.freecodecamp.com/email-submit"> 
-          <ul class="list-style">
-          <li class="services-label">
-            <div class="input-container">
-              <input type="email" placeholder="someone@example.com" name="email" id="email" class="text" required>  
-           </div>
-           <div id="submit-button">
-            <input type="submit" name="submit-button" id="submit" class="submit-button" value="Get Started" > 
-           </div>
-          </li>
-          </ul>
-          </form>
-        </section>
-      
-       <div class="navbar-elements">
-           <section id="features">
-           </section>
-
-           <section id="demo">            
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/iJdHUk8rgNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-           </section>
-
-           <section id="price">
-            <div id="pricing-box">
-             <!-- EMMET HERE-->
-             <ul class="pricing-list">
-               <div>
-               <li><b>STANDARD SERIES :</b> From 999,99 €</li>
-              </div>
-
-              <div>
-               <li><b>SIGNATURE SERIERS :</b> From 1299,99 €</li>
-               </div>
-
-               <div>
-               <li><b>BASS GUITAR :</b> From 1499.99 € </li>
-              </div>
-
-             </ul>
+  <div id="header-container">
+    <header id="main-header"> <!-- uso improprio header-->
+      <img id="main-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSdoFfUPKjSL2jC4XZUrzy7fAKbnm6mWZq2XDlxG9TOuyfIWFu1nIpRjyDJQNttyk2bU&usqp=CAU" alt="MansonGuitarWorks" height="110px" width="220px"/> 
+        <!-- correzione, qua il div non servea nulla, studiare meglio tag nav -->
+      <nav id="nav-bar">                        
+        <ul class="list-style">
+            <li>
+                <a class="nav-link" href="#feature">Feature</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#demo">Demo</a>
+            </li>
+            <li> 
+                <a class="nav-link" href="#price">Pricing</a>
+            </li>   
+        </ul>
+      </nav>
+    </header>   
+  </div>
+ 
+  <div id="page-wrapper">
+      <div id="customer-section">
+          <section id="subscribe-area">
+            <h2 class="title">
+              Handcrafted masterpieces
+            </h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit"> <!-- naming inconsistente e ripetitivo classe css inutile -->
+            <ul class="list-style">
+            <li class="services-label">
+              <div class="input-container">
+                <input type="email" placeholder="someone@example.com" name="email" id="email" class="text" required>  
             </div>
-           </section>
-       </div>
+            <div id="submit-button">
+              <input type="submit" name="submit-button" id="submit" class="submit-button" value="Get Started" > 
+            </div>
+            </li>
+            </ul>
+            </form>
+          </section>
+ 
+      <div class="navbar-elements">
+        <section id="demo">            
+        <iframe id="demo-video" src="https://www.youtube.com/embed/iJdHUk8rgNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </section>
+ 
+        <section id="price">
+        <div id="pricing-box">
+          <ul class="pricing-list">
+          <div>
+            <li><b>STANDARD SERIES :</b> From 999,99 €</li>
+          </div>
+ 
+          <div>
+            <li><b>SIGNATURE SERIERS :</b> From 1299,99 €</li>
+          </div>
+ 
+          <div>
+            <li><b>BASS GUITAR :</b> From 1499.99 € </li>
+          </div>
+ 
+          </ul>
+        </div>
+        </section>
+      </div>
     </div>
-  
-</div> 
+  </div> 
+ 
+  <!-- Card Section -->
+  <section id="card-section">
+    <div class="product-card">
+      <div class="card-header">
+        <h6 class="card-title">header</h6>
+      </div>
+      <div class="card-description">
+        <div class="card-price">
+          760,00 €
+        </div>
+        <div class="card-descritions-detail">
+          Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum.  
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="card-button">SELECT</button>
+      </div>
+    </div>
+ 
+    <div class="product-card">
+      <div class="card-header">
+        <h6 class="card-title">header</h6>
+      </div>
+      <div class="card-description">
+        <div class="card-price">
+          860,00 €
+        </div>
+        <div class="card-descritions-detail">
+          Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.  
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="card-button">SELECT</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-header">
+        <h6 class="card-title">header</h6>
+      </div>
+      <div class="card-description">
+        <div class="card-price">
+          960,00 €
+        </div>
+        <div class="card-descritions-detail">
+          Lorem ipsum.
+          Lorem ipsum.
+          Lorem ipsum dolor.
+          Lorem ipsum.  
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="card-button">SELECT</button>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
  
